@@ -2,6 +2,8 @@
 
 Simple and efficient Arduino controller for RGB LED strips with smooth transitions and brightness control. Supports both common cathode and common anode RGB strips.
 
+Works with [Honebridge Plugin](https://github.com/whereayodev/homebridge-rgb-serial/tree/main)
+
 ## Features
 
 - Smooth color transitions
