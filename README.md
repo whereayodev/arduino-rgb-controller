@@ -12,12 +12,24 @@ Simple and efficient Arduino controller for RGB LED strips with smooth transitio
 - Serial command interface
 
 ## Hardware Setup
+![Connection Scheme](https://github.com/user-attachments/assets/ee64c2dd-b6e7-471f-96a2-5f080aacaa16)
+### 🔧 Components Used
+- **Arduino Nano** – Microcontroller
+- **IRLZ34N / IRF3205 / 2302 MOSFET** – 3 pcs. (one for each channel: R, G, B)
+- **Resistors** – 3 pcs. **1kΩ**
+- **RGB LED Strip** – Common anode type
+- **Power Supply 5V**
 
-1. Connect RGB strip to Arduino:
-   - Red → Pin 3
-   - Green → Pin 6
-   - Blue → Pin 5
-   - Power/Ground according to your strip type
+### ⚡ Wiring
+
+| Component         | Arduino Nano | Notes                      |
+|------------------|-------------|---------------------------|
+| **Red Channel**  | D3          | Connected via MOSFET and 1kΩ resistor |
+| **Blue Channel** | D5          | Connected via MOSFET and 1kΩ resistor |
+| **Green Channel**| D6          | Connected via MOSFET and 1kΩ resistor |
+| **Common Anode (VCC)** | +5V    | Power supply for the LED strip |
+| **GND**         | GND         | Common ground |
+
 
 ## Serial Communication
 
